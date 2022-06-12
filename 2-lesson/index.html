@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Work 2</title>
+</head>
+<body>
+  <h1>Strings, numbers, operators</h1>
+  <script>
+    // 1
+    const num = 100,
+          numBinary = num.toString(2),
+          numHexadecimal = num.toString(16);
+
+    console.log(`${numBinary} ${numHexadecimal}`);
+
+
+    // 2
+    const numPrompt = prompt();
+
+    console.log(numPrompt + 2);
+    console.log(numPrompt - 2);
+    console.log(numPrompt / 2);
+    console.log(numPrompt * 2);
+    console.log(numPrompt.length);
+
+    const numFloat = 0.51000002;
+    console.log(numFloat.toFixed(2) + 2);
+
+
+    // 3
+    const str = 'the quick brown fox jumps over the lazy dogs back';
+    const strTwo = 'brown fox jumps'
+
+    console.log(str.indexOf(strTwo));
+    console.log(str.toUpperCase());
+
+
+    // 4
+    const a = 1,
+          b = 2,
+          c = 3,
+          d = 3;
+
+    const comparisonA = a < c < b || b === c === c || c === c === d;
+    console.log(comparisonA);
+
+    const comparisonB = a < c < b && b < c < c && c > c < d;
+    console.log(comparisonB);
+
+
+    // 5
+    const test = "1" == 1, //true
+          test2 = "2" === 2; // false
+
+    console.log(null ?? 'test'); //test
+    
+  </script>
+</body>
+</html>
