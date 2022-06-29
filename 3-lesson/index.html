@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Условные конструкции. Циклы. Math, Date()</title>
+</head>
+
+<body>
+  <h1>Условные конструкции. Циклы. Math, Date()</h1>
+
+  <script>
+    // 1
+    // let name = prompt('Ваше имя');
+
+    // for (let i = 0; i < 3; i++) {
+    //   console.log('Happy birthday to you!');
+
+    //   if (i === 1) {
+    //     console.log(`Happy birthday, dear ${name}`);
+    //   } else if (!name) {
+    //     name = 'Pavel';
+    //   }
+    // }
+
+
+    // 2
+    // let str = '',
+    //     rep = prompt('Количество повторений символа ".#"');
+
+    // for (let i = 0; i < rep; i++) {
+    //   str += '.#';
+    // }
+
+    // console.log(`${str} || ${str.length / 2} символа(ов)`);
+
+
+    // 3
+    // let num = Number(prompt('Ваше число')),
+    //     res = 0;
+
+    // while (!num || typeof num !== 'number') {
+    //   num = Number(prompt('Invalid. You should enter a number'));
+    // }
+
+    // for (let i = 1; i < num; i += 2) {
+    //   res += i;
+    // }
+
+    // console.log(res);
+
+
+    // 4
+    // let res = 1;
+
+    // while (true) {
+    //   let random = Math.random().toFixed(1);
+
+    //   res++
+
+    //   if (random > 0.7) {
+    //     console.log(`Loop was finished because of: ${random}`);
+    //     console.log(`Number of iterations: ${res}`);
+
+    //     break;
+    //   }
+    // }
+
+    
+    // 5
+    // for (let i = 1; i <= 50; i++) {
+    //   if (i % 3 === 0 && i % 5 === 0) {
+    //     console.log('Div by 3 and 5');
+    //   } else if (i % 3 === 0) {
+    //     console.log('Div by 3');
+    //   } else if (i % 5 === 0) {
+    //     console.log('Div by 5');
+    //   } else {
+    //     console.log(i);
+    //   }
+    // }
+
+
+    // 6
+    let date = new Date();
+
+    console.log(date);
+
+
+  </script>
+
+</body>
+
+</html>
